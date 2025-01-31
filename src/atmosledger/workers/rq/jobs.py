@@ -13,7 +13,7 @@ from atmosledger.settings import settings
 
 def ingest_open_meteo_hourly_job(location_id: str, start_date: str, end_date: str) -> dict:
     """
-    RQ job entrypoint. Args are strings for serialization.
+    RQ job entrypoint. Args are STRINGS for serialization.
     """
     loc_id = uuid.UUID(location_id)
     sd = date.fromisoformat(start_date)
