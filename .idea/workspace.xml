@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72a58814-97fe-424a-9fd6-c6ef1b3be922" name="Changes" comment="rq workers changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atmosledger/api/routes/ingestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmosledger/api/routes/ingestion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atmosledger/workers/rq/worker.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmosledger/workers/rq/worker.py" afterDir="false" />
+    <list default="true" id="72a58814-97fe-424a-9fd6-c6ef1b3be922" name="Changes" comment="dockerChanges">
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile.worker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1767716680806</updated>
-      <workItem from="1767716684819" duration="3508000" />
+      <workItem from="1767716684819" duration="3810000" />
     </task>
     <task id="LOCAL-00001" summary="rq workers etc">
       <option name="closed" value="true" />
@@ -98,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767719738198</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="dockerChanges">
+      <option name="closed" value="true" />
+      <created>1767720280615</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1767720280615</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,7 +116,8 @@
     <MESSAGE value="rq workers etc" />
     <MESSAGE value="rq workers edit" />
     <MESSAGE value="rq workers changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="rq workers changes" />
+    <MESSAGE value="dockerChanges" />
+    <option name="LAST_COMMIT_MESSAGE" value="dockerChanges" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
