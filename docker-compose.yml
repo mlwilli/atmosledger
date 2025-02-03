@@ -27,5 +27,42 @@ services:
       timeout: 3s
       retries: 20
 
+  worker:
+    image: python:3.12-slim
+    container_name: atmosledger-worker
+    working_dir: /app
+    environment:
+      # Runtime
+      ENV: dev
+      LOG_LEVEL: INFO
+
+      # Python path for src-layout
+      PYTHONPATH: /app/src
+
+      # Database (container DNS names, NOT localhost)
+      DATABASE_URL: postgresql+psycopg://atmosledger:atmosledger@postgres:5432/atmosledger
+
+      # Redis / RQ
+      REDIS_URL: redis://redis:6379/0
+      RQ_QUEUE: default
+
+      # Open-Meteo
+      OPEN_METEO_BASE_URL: https://api.open-meteo.com/v1
+      OPEN_METEO_ARCHIVE_BASE_URL: https://archive-api.open-meteo.com/v1
+
+    volumes:
+      - ./:/app
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    command: >
+      sh -c "
+        pip install --no-cache-dir poetry &&
+        poetry install &&
+        python -m atmosledger.workers.rq.worker
+      "
+
 volumes:
   atmosledger_pgdata:
