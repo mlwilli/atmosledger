@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72a58814-97fe-424a-9fd6-c6ef1b3be922" name="Changes" comment="docker Workerfix">
-      <change afterPath="$PROJECT_DIR$/src/atmosledger/api/routes/series.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atmosledger/services/aggregation_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+    <list default="true" id="72a58814-97fe-424a-9fd6-c6ef1b3be922" name="Changes" comment="DailyAgg">
+      <change afterPath="$PROJECT_DIR$/src/atmosledger/api/routes/anomalies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atmosledger/db/repo/anomaly_daily_repo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atmosledger/services/anomaly_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile.worker" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile.worker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atmosledger/db/repo/daily_aggregate_repo.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmosledger/db/repo/daily_aggregate_repo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmosledger/db/orm/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmosledger/db/orm/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmosledger/db/orm/anomoly_daily.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/atmosledger/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmosledger/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +79,7 @@
       <updated>1767716680806</updated>
       <workItem from="1767716684819" duration="4579000" />
       <workItem from="1767721290242" duration="243000" />
-      <workItem from="1767721606467" duration="312000" />
+      <workItem from="1767721606467" duration="1260000" />
     </task>
     <task id="LOCAL-00001" summary="rq workers etc">
       <option name="closed" value="true" />
@@ -122,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767720690470</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="DailyAgg">
+      <option name="closed" value="true" />
+      <created>1767722138862</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1767722138862</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +141,8 @@
     <MESSAGE value="rq workers changes" />
     <MESSAGE value="dockerChanges" />
     <MESSAGE value="docker Workerfix" />
-    <option name="LAST_COMMIT_MESSAGE" value="docker Workerfix" />
+    <MESSAGE value="DailyAgg" />
+    <option name="LAST_COMMIT_MESSAGE" value="DailyAgg" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -8,6 +8,8 @@ from atmosledger.api.routes.locations import router as locations_router
 from atmosledger.logging_config import configure_logging
 from atmosledger.settings import settings
 from atmosledger.api.routes.series import router as series_router
+from atmosledger.api.routes.anomalies import router as anomalies_router
+
 
 configure_logging(settings.log_level)
 
@@ -17,3 +19,4 @@ app.include_router(health_router)
 app.include_router(locations_router)
 app.include_router(ingestion_router)
 app.include_router(series_router)
+app.include_router(anomalies_router)
