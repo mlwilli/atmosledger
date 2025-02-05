@@ -30,7 +30,13 @@ python-dotenv = "^1.0.1"
 
 
 [tool.poetry]
-package-mode = false
+name = "atmosledger"
+version = "0.1.0"
+description = ""
+authors = ["..."]
+
+packages = [{ include = "atmosledger", from = "src" }]
+
 [tool.poetry.scripts]
 dev = "atmosledger.util.time:noop"
 

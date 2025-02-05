@@ -7,6 +7,7 @@ from atmosledger.api.routes.ingestion import router as ingestion_router
 from atmosledger.api.routes.locations import router as locations_router
 from atmosledger.logging_config import configure_logging
 from atmosledger.settings import settings
+from atmosledger.api.routes.series import router as series_router
 
 configure_logging(settings.log_level)
 
@@ -15,3 +16,4 @@ app = FastAPI(title="AtmosLedger", version="0.1.0")
 app.include_router(health_router)
 app.include_router(locations_router)
 app.include_router(ingestion_router)
+app.include_router(series_router)
