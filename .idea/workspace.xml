@@ -4,13 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72a58814-97fe-424a-9fd6-c6ef1b3be922" name="Changes" comment="DailyAgg">
-      <change afterPath="$PROJECT_DIR$/src/atmosledger/api/routes/anomalies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atmosledger/db/repo/anomaly_daily_repo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atmosledger/services/anomaly_service.py" afterDir="false" />
+    <list default="true" id="72a58814-97fe-424a-9fd6-c6ef1b3be922" name="Changes" comment="Anomaly detection">
+      <change afterPath="$PROJECT_DIR$/atmosledger-ui/.env.development" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atmosledger-ui/.env.production" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/api/anomalies.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/api/client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/api/locations.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/api/series.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/api/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/components/AnomaliesTable.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/components/Card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/components/DateRange.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/components/LineSeriesChart.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/pages/DashboardPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atmosledger/db/orm/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmosledger/db/orm/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atmosledger/db/orm/anomoly_daily.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/atmosledger/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmosledger/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +30,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -40,6 +50,10 @@
     &quot;accountId&quot;: &quot;ed8b1482-37d4-40bf-8c6b-99812ed22fdd&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -48,20 +62,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "ts.external.directory.path": "D:\\Users\\homem\\IdeaProjects\\atmosledger\\atmosledger-ui\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -79,7 +95,7 @@
       <updated>1767716680806</updated>
       <workItem from="1767716684819" duration="4579000" />
       <workItem from="1767721290242" duration="243000" />
-      <workItem from="1767721606467" duration="1260000" />
+      <workItem from="1767721606467" duration="2707000" />
     </task>
     <task id="LOCAL-00001" summary="rq workers etc">
       <option name="closed" value="true" />
@@ -129,11 +145,30 @@
       <option name="project" value="LOCAL" />
       <updated>1767722138862</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Anomaly detection">
+      <option name="closed" value="true" />
+      <created>1767722891395</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1767722891395</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rq workers etc" />
@@ -142,7 +177,8 @@
     <MESSAGE value="dockerChanges" />
     <MESSAGE value="docker Workerfix" />
     <MESSAGE value="DailyAgg" />
-    <option name="LAST_COMMIT_MESSAGE" value="DailyAgg" />
+    <MESSAGE value="Anomaly detection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Anomaly detection" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -4,7 +4,6 @@
     <option name="sdkName" value="Python 3.12 (atmosledger)" />
   </component>
   <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.25.5" />
-  <component name="KubernetesApiProvider"><![CDATA[{}]]></component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (atmosledger)" project-jdk-type="Python SDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
