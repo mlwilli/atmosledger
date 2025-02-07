@@ -1,7 +1,8 @@
-# AtmosLedger
+# Atmosphere Ledger
 
 **AtmosLedger** Atmospheric data platform for ingesting, aggregating, and analyzing weather time-series data.  
-It provides a clean API, background ingestion workers, and a modern chart-driven UI for exploration.
+It provides a clean API, background ingestion workers, and a modern chart-driven UI for exploration. 
+Simply put, pulls and detects anomalous weather.
 
 ---
 
