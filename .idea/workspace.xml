@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72a58814-97fe-424a-9fd6-c6ef1b3be922" name="Changes" comment="Anomaly detection">
-      <change afterPath="$PROJECT_DIR$/atmosledger-ui/.env.development" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atmosledger-ui/.env.production" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/api/anomalies.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/api/client.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/api/locations.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/api/series.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/api/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/components/AnomaliesTable.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/components/Card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/components/DateRange.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/components/LineSeriesChart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atmosledger-ui/src/pages/DashboardPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="72a58814-97fe-424a-9fd6-c6ef1b3be922" name="Changes" comment="ReadMe update 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atmosledger/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmosledger/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atmosledger-ui/src/pages/DashboardPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/atmosledger-ui/src/pages/DashboardPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +82,7 @@
       <updated>1767716680806</updated>
       <workItem from="1767716684819" duration="4579000" />
       <workItem from="1767721290242" duration="243000" />
-      <workItem from="1767721606467" duration="2707000" />
+      <workItem from="1767721606467" duration="3422000" />
     </task>
     <task id="LOCAL-00001" summary="rq workers etc">
       <option name="closed" value="true" />
@@ -153,7 +140,31 @@
       <option name="project" value="LOCAL" />
       <updated>1767722891395</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="App UI">
+      <option name="closed" value="true" />
+      <created>1767724324359</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1767724324359</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ReadMe update">
+      <option name="closed" value="true" />
+      <created>1767724522030</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1767724522030</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ReadMe update 2">
+      <option name="closed" value="true" />
+      <created>1767724714849</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1767724714849</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +189,10 @@
     <MESSAGE value="docker Workerfix" />
     <MESSAGE value="DailyAgg" />
     <MESSAGE value="Anomaly detection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Anomaly detection" />
+    <MESSAGE value="App UI" />
+    <MESSAGE value="ReadMe update" />
+    <MESSAGE value="ReadMe update 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="ReadMe update 2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

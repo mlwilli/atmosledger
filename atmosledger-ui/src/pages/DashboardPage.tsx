@@ -63,7 +63,8 @@ export function DashboardPage() {
             <div style={{ maxWidth: 1100, margin: "0 auto", padding: 24, display: "grid", gap: 16 }}>
                 <header style={{ display: "flex", justifyContent: "space-between", alignItems: "end", gap: 16, flexWrap: "wrap" }}>
                     <div>
-                        <div style={{ fontSize: 22, fontWeight: 700 }}>AtmosLedger</div>
+                        <div style={{ fontSize: 22, fontWeight: 700 }}>Atmosphere Ledger</div>
+                        <div style={{ fontSize: 15, color: "#6b7280" }}>By Marcus Williams</div>
                         <div style={{ fontSize: 12, color: "#6b7280" }}>
                             Location: {location.name} ({location.timezone})
                         </div>
