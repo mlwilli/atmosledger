@@ -41,6 +41,11 @@ Simply put, pulls and detects anomalous weather.
 
 ---
 
+<p align="center">
+  <img src="docs/screenshots/atmos.png" width="500" />
+</p>
+
+
 ## Quick Start (Development)
 
 ```bash
