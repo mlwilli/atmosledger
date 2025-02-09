@@ -42,7 +42,7 @@ Simply put, pulls and detects anomalous weather.
 ---
 
 <p align="center">
-  <img src="docs/screenshots/atmos.png" width="500" />
+  <img src="docs/screenshots/Atmos.png" width="500" />
 </p>
 
 
